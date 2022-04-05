@@ -82,6 +82,11 @@ class Address {
         "zipcode": zipcode,
         "geo": geo.toMap(),
       };
+
+  @override
+  String toString() {
+    return 'Address(street: $street, suite: $suite, city: $city, zipcode: $zipcode, geo: $geo)';
+  }
 }
 
 class Geo {
